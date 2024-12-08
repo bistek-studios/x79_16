@@ -17,10 +17,6 @@ REGISTER_CODES = {
 
 # Function to assemble a single line of code (first pass)
 def first_pass(line, labels, address):
-    
-
-    
-
     line = line.strip()
     if not line or line.startswith(";") or line.startswith("."):  # Ignore empty lines, directives, and comments
         return address
